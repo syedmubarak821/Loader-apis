@@ -24,7 +24,7 @@ public class LoaderApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("*") //sahab this will allow to get link from any of the server I think axios request error might get resolved
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
